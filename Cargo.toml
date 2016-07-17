@@ -1,0 +1,11 @@
+[package]
+name = "polyline_ffi"
+version = "0.1.0"
+authors = ["Jani Hakala <jjhakala@gmail.com>"]
+
+[dependencies]
+libc = "*"
+polyline = "*"
+
+[lib]
+crate-type = ["dylib"]
