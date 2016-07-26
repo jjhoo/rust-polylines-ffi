@@ -28,7 +28,7 @@ int main(void)
    rc = encode_coordinates_ffi2(buf, BUFSIZE, data.data, 2);
    printf("%d %s\n", rc, buf);
    free(data.data);
-   // drop_cstring(res);
+   // free_cstring(res);
 
    return 0;
 }

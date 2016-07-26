@@ -3,8 +3,8 @@ import sys
 from ctypes import *
 
 class _Coord(Structure):
-    _fields_ = [("longitude", c_double),
-		("latitude", c_double)]
+    _fields_ = [ ("latitude", c_double),
+                 ("longitude", c_double) ]
 
 lib = CDLL('target/debug/libpolyline_ffi.so')
 
